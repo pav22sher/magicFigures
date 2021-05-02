@@ -1,24 +1,62 @@
 package task;
 
 public class Task3 {
-    /**
-     * Вопрос на понимание работы пула строк в Java и на понимание сравнения строк.
-     * Разберем детально: Переменная s1 ссылается на строку в пуле уникальных строк в памяти,
-     * переменная s2 ссылается на ту же саму строку в пуле уникальных строк,
-     * что и переменная s1, первое сравнение будет true, так как s1 и s2 ссылаются на один и тот же объект.
-     * Переменная s3 ссылается на новый объект, который не находится в пуле уникальных строк,
-     * так как он создан через new, следовательно второе сравнение будет false,
-     * так как сравниваем переменные которые ссылаются на на два разных объекта. Третье сравнение будет true,
-     * так как мы сравниваем строки посимвольно на эквивалентность через equals,
-     * а содержимое данных строк одинаково.
-     * @param args
-     */
     public static void main(String[] args) {
-        String s1 = "abc";
-        String s2 = "abc";
-        String s3= new String("abc");
-        System.out.println("s1 == s2 ? "+(s1==s2));
-        System.out.println("s1 == s3 ? "+(s1==s3));
-        System.out.println("s1 equals s3 ? "+(s1.equals(s3)));
+        Point p = new Point(1,2);
+        System.out.println(p);
+        change(p);
+        System.out.println(p);
+        //при выводе мы видем значение z=0, хотя мы его не присваевали
+        //Д/З
+        //Узнать какие значения присваеваются остальным примитивным типам данных по умалчанию?
+        //Узнать какое значения присваевается объектам по умалчанию?
+    }
+
+    private static void change(Point p){
+        //p = new Point();
+        p.setX(3);
+        p.setY(4);
+    }
+
+    private static class Point{
+        private int x,y,z;
+
+        public Point() {
+        }
+
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        public Point(int x, int y, int z) {
+            this(x, y);
+            this.z = z;
+        }
+
+        public int getX() {
+            return x;
+        }
+
+        public void setX(int x) {
+            this.x = x;
+        }
+
+        public int getY() {
+            return y;
+        }
+
+        public void setY(int y) {
+            this.y = y;
+        }
+
+        @Override
+        public String toString() {
+            return "Point{" +
+                    "x=" + x +
+                    ", y=" + y +
+                    ", z=" + z +
+                    '}';
+        }
     }
 }

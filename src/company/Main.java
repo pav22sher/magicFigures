@@ -3,6 +3,8 @@ package company;
 public class Main {
 
     public static void main(String[] args) {
-        //удачи
+        //не бойся спрашивать, если что-то не понятно
+        //не бывает тупых вопросов
+        //удачи!
     }
 }
