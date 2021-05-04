@@ -1,7 +1,9 @@
 package company.model;
 
+import java.time.LocalDateTime;
+
 /**
- * Треугльник
+ * Треугольник
  */
 public class Triangle extends Figure{
     /**
@@ -16,6 +18,11 @@ public class Triangle extends Figure{
      * Сторона C
      */
     private float sideC;
+    //Блок инициализации
+    {
+        name = "Треугольник";
+        createdAt = LocalDateTime.now();
+    }
 
     public Triangle(float sideA, float sideB, float sideC) {
         setSideA(sideA);
@@ -54,15 +61,5 @@ public class Triangle extends Figure{
     @Override
     float getPerimeter() {
         return sideA + sideB + sideC;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder info = new StringBuilder("Треугольник:");
-        info
-                .append("площадь=").append(getArea())
-                .append(",")
-                .append("периметр=").append(getPerimeter());
-        return info.toString();
     }
 }

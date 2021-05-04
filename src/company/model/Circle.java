@@ -1,5 +1,7 @@
 package company.model;
 
+import java.time.LocalDateTime;
+
 /**
  * Круг
  */
@@ -8,6 +10,11 @@ public class Circle extends Figure{
      * Радиус
      */
     private float radius;
+    //Блок инициализации
+    {
+        name = "Круг";
+        createdAt = LocalDateTime.now();
+    }
 
     public Circle(float radius) {
         setRadius(radius);
@@ -28,15 +35,5 @@ public class Circle extends Figure{
     @Override
     float getPerimeter() {
         return (float) (2 * Math.PI * radius);
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder info = new StringBuilder("Круг:");
-        info
-                .append("площадь=").append(getArea())
-                .append(",")
-                .append("периметр=").append(getPerimeter());
-        return info.toString();
     }
 }

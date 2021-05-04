@@ -1,5 +1,7 @@
 package company.model;
 
+import java.time.LocalDateTime;
+
 /**
  * Квадрат
  */
@@ -8,6 +10,11 @@ public class Square extends Figure{
      * Сторона
      */
     private float side;
+    //Блок инициализации
+    {
+        name = "Квадрат";
+        createdAt = LocalDateTime.now();
+    }
 
     public Square(float side) {
         setSide(side);
@@ -28,15 +35,5 @@ public class Square extends Figure{
     @Override
     float getPerimeter() {
         return 4 * side;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder info = new StringBuilder("Квадрат:");
-        info
-                .append("площадь=").append(getArea())
-                .append(",")
-                .append("периметр=").append(getPerimeter());
-        return info.toString();
     }
 }

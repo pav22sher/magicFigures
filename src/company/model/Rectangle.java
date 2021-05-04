@@ -1,5 +1,7 @@
 package company.model;
 
+import java.time.LocalDateTime;
+
 /**
  * Прямоугольник
  */
@@ -12,6 +14,11 @@ public class Rectangle extends Figure{
      * Длина
      */
     private float width;
+    //Блок инициализации
+    {
+        name = "Прямоугольник";
+        createdAt = LocalDateTime.now();
+    }
 
     public Rectangle(float height, float width) {
         setHeight(height);
@@ -40,15 +47,5 @@ public class Rectangle extends Figure{
     @Override
     float getPerimeter() {
         return 2 * (height + width);
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder info = new StringBuilder("Прямоугольник:");
-        info
-                .append("площадь=").append(getArea())
-                .append(",")
-                .append("периметр=").append(getPerimeter());
-        return info.toString();
     }
 }
