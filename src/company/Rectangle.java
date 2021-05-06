@@ -29,7 +29,7 @@ public class Rectangle extends Figure {
 
         perimetr = 2 * (heigth + width);
 
-        System.out.println("Периметр равен " + perimetr);
+        System.out.println("Периметр равен " + perimetr);//TODO: вынести из метода
         return perimetr;
     }
 
@@ -37,11 +37,12 @@ public class Rectangle extends Figure {
 
         int sq = heigth * width;
 
-        System.out.println("Площадь равна " + sq);
+        System.out.println("Площадь равна " + sq);//TODO: вынести из метода
         return sq;
     }
 
     protected void drowing(int heigth, int width) {
+        //TODO: не стоит именовать так переменные!
         int _heigth = heigth;
         int _width = width;
         for (int i = 0; i < _width; i++) {

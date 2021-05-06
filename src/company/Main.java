@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+//TODO:Введите ширину квадрата и Введите высоту квадрата=) У квадрата есть и ширина и высота?(копипаст сила)
 public class Main {
-    public static String start() throws IOException {
+    public static String start() throws IOException { //TODO: зачем исключение? зачем возращаемое значение?
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Выбери фигуру");
