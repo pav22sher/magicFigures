@@ -2,67 +2,64 @@ package company;
 
 import java.util.Scanner;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-public class Main
-{
-    public static class Figure
-    {
-
-        protected String form;
-        protected int heigth;
-        protected int width;
-        protected int sq;
-        protected int perimetr;
-
-    }
-
-    public static class Square extends Figure{
-
-        String form = "Квадрат";
-
-        public int perimetr(int heigth, int width)
-        {
-
-            return perimetr = 2 * (heigth + width);
-
-        }
-        public int squ (int heigth, int width)
-        {
-            return sq = heigth * width;
-
-        }
-
-    }
-
-    public static class Cicle{
-
-
-    }
-
-
-
-    public static void main(String[] args) throws IOException
-    {
+public class Main {
+    public static String start() throws IOException {
         Scanner scanner = new Scanner(System.in);
-        Square square = new Square();
 
-        System.out.println(square.form);
+        System.out.println("Выбери фигуру");
 
+        System.out.println("1. Квадрат\n" + "2. Прямоугольник\n" + "3. Круг\n" + "4. Треугольник\n Ваш ввод:  ");
 
-        System.out.println("Введите ширину квадрата");
-        int width = scanner.nextInt();
-        System.out.println("Введите высоту квадрата");
-        int heigth = scanner.nextInt();
-
-        if (width > 0 && heigth > 0)
-        {
-            System.out.println("Площадь равна " + square.squ(width, heigth));
-            System.out.println("Периметр равен " + square.perimetr(width,heigth));
+        int caseSwitch = scanner.nextInt();
+        switch (caseSwitch) {
+            case 1:
+                Square square = new Square();
+                square.parametrs();
+                square.perimetr(square.width, square.heigth);
+                square.getArea(square.width, square.heigth);
+                square.drowing(square.width, square.heigth);
+                break;
+            case 2:
+                Rectangle rectangle = new Rectangle();
+                rectangle.parametrs();
+                rectangle.perimetr(rectangle.heigth, rectangle.width);
+                rectangle.getArea(rectangle.heigth, rectangle.width);
+                rectangle.drowing(rectangle.heigth, rectangle.width);
+                break;
+            case 3:
+                Circle circle = new Circle();
+                circle.parametrs();
+                circle.perimetr(circle.radius);
+                circle.getArea(circle.radius);
+                circle.drowing(circle.radius);
+                break;
+            case 4:
+                Triangle triangle = new Triangle();
+                triangle.parametrs();
+                triangle.perimetr(triangle.ab, triangle.bc, triangle.ac);
+                triangle.getArea(triangle.ab, triangle.bc, triangle.ac);
+                break;
+            default:
+                System.out.println("Некорректный ввод, попробуйте еще раз");
+                break;
         }
-        else
-            System.out.println("некорректный ввод");
+        LocalDateTime createdAt = LocalDateTime.now();
+        StringBuilder builder = new StringBuilder();
+        builder.append("Время создания:").append(createdAt.format(DateTimeFormatter.ofPattern("HH:mm:ss \t dd/MM/yyyy\t")));
+
+        return builder.toString();
+
+
+
 
     }
 
 
+    public static void main(String[] args) throws IOException {
+
+        start();
+    }
 }
