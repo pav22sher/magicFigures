@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c30505a4-64ea-4600-97b7-f514864b5071" name="Default Changelist" comment="Создал разные фигуры!">
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/module1/Lesson9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/model/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/model/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/model/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/model/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/course/module1/Lesson1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/module1/Lesson1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="volodinLalala" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,13 +48,70 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../study/src/com/company/Main.java" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="company.Main" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="course.module1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Lesson11">
+    <configuration name="Lesson10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.module1.Lesson10" />
       <module name="JavaMagicFigures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="company.*" />
+          <option name="PATTERN" value="course.module1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.module1.Lesson11" />
+      <module name="JavaMagicFigures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.module1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.module1.Lesson5" />
+      <module name="JavaMagicFigures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.module1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.module1.Lesson7" />
+      <module name="JavaMagicFigures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.module1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.module1.Lesson8" />
+      <module name="JavaMagicFigures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.module1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,7 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Lesson11" />
+        <item itemvalue="Application.Lesson10" />
+        <item itemvalue="Application.Lesson8" />
+        <item itemvalue="Application.Lesson7" />
+        <item itemvalue="Application.Lesson5" />
       </list>
     </recent_temporary>
   </component>
@@ -87,7 +153,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="volodinLalala" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
