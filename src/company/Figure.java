@@ -3,19 +3,22 @@ package company;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-
-public class Figure {
+//TODO: изменить тип на float полей width, heigth, radius
+//TODO: оставить в этом классе поля createdAt, sq, perimetr
+//TODO: сначало указываются поля,а потом методы (метод getName переместить в конец)
+//TODO: Прочитай про javadoc
+public class Figure { //TODO: сделать класс абстрактным
 
     protected String getName(String name)
     {
         return name;
     }
-    public LocalDateTime createdAt;
-    protected int width;
-    protected int heigth;
-    protected int radius;
+    public LocalDateTime createdAt;//TODO: сделать поля protected
+    protected int width; //TODO: вынести в класс прямоугольника
+    protected int heigth; //TODO: вынести в класс прямоугольника и переименовать height
+    protected int radius; //TODO: вынести в класс окружности
     protected double sq;
-    protected int perimetr;
+    protected int perimetr; //TODO: переименовать на perimeter
 
     public String toString(){
 
