@@ -1,24 +1,24 @@
 package company;
 
 import java.util.Scanner;
-import java.time.LocalDateTime;
+
 public class Triangle extends Figure {
-    int ab;
-    int bc;
-    int ac;
+    float ab;
+    float bc;
+    float ac;
 
     Scanner scanner = new Scanner(System.in);
 
-    protected void parametrs() {
+    protected void parameters() {
         System.out.println(getName("Треугольник"));
 
         do {
             System.out.println("Введите длину стороны АВ");
-            ab = scanner.nextInt();
+            ab = scanner.nextFloat();
             System.out.println("Введите длину стороны АС");
-            ac = scanner.nextInt();
+            ac = scanner.nextFloat();
             System.out.println("Введите длину стороны ВС");
-            bc = scanner.nextInt();
+            bc = scanner.nextFloat();
             if(ab <= 0 || ac <= 0 || bc <=0)
             System.out.println("Стороны треугольника должны быть больше 0");
         }
@@ -27,21 +27,21 @@ public class Triangle extends Figure {
 
     }
 
-    protected int perimetr(int ab, int bc, int ac) {
+    protected double getPerimeter(float ab, float bc, float ac) {
 
-        perimetr = ab + bc + ac;
+        perimeter = ab + bc + ac;
 
-        System.out.println("Периметр равен " + perimetr);
-        return perimetr;
+        return perimeter;
     }
 
-    protected double getArea(int ab, int bc, int ac) {
-        double halfperimetr = (ab + bc + ac)/2;
+    protected double getArea(float ab, float bc, float ac) {
+        float halfperimetr = (ab + bc + ac)/2;
         sq = Math.sqrt(halfperimetr*((halfperimetr-ab)*(halfperimetr-bc)*(halfperimetr-ac)));
-
-        System.out.println("Площадь равна " + sq);
-        return sq;
+return sq;
     }
+    public void outPut() {
 
+        System.out.println("Периметр равен: " + perimeter + "\n Площадь равна:" + sq);
+    }
 
 }

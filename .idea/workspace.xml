@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c30505a4-64ea-4600-97b7-f514864b5071" name="Default Changelist" comment="Вот дописал небольшой интерфейс по простому.&#10;Не понял как дату вызывать пока что.&#10;и как настроить следующие команды CRUD-создание(create), чтение(read), модификация(update), удаление(delete)" />
+    <list default="true" id="c30505a4-64ea-4600-97b7-f514864b5071" name="Default Changelist" comment="очистил">
+      <change afterPath="$PROJECT_DIR$/out.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/Audit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/ReadObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/WriteObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Triangle.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -21,6 +40,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -39,8 +59,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../study/src/com/company/Main.java" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="company" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ReadObject">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="company.Main" />
       <module name="JavaMagicFigures" />
@@ -54,9 +80,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReadObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="company.ReadObject" />
+      <module name="JavaMagicFigures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interfaces.Test" />
+      <module name="JavaMagicFigures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="company.Test" />
+      <module name="JavaMagicFigures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="company.WriteObject" />
+      <module name="JavaMagicFigures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadObject" />
+        <item itemvalue="Application.WriteObject" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -83,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620296330781</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="очистил">
+      <created>1620297807097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620297807097</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,7 +180,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="volodinLalala" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -101,6 +202,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="я запрограммировал квадрат, можно посчитать периметр и площадь" />
     <MESSAGE value="Вот дописал небольшой интерфейс по простому.&#10;Не понял как дату вызывать пока что.&#10;и как настроить следующие команды CRUD-создание(create), чтение(read), модификация(update), удаление(delete)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вот дописал небольшой интерфейс по простому.&#10;Не понял как дату вызывать пока что.&#10;и как настроить следующие команды CRUD-создание(create), чтение(read), модификация(update), удаление(delete)" />
+    <MESSAGE value="очистил" />
+    <option name="LAST_COMMIT_MESSAGE" value="очистил" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

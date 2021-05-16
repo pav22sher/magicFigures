@@ -8,50 +8,40 @@ public class Rectangle extends Figure {
     Scanner scanner = new Scanner(System.in);
 
 
-    protected void parametrs() {
+    protected void parameters() {
         System.out.println(getName("Прямоугольник"));
 
         do {
             System.out.println("Введите ширину прямоугольника");
-            width = scanner.nextInt();
+            width = scanner.nextFloat();
             System.out.println("Введите высоту прямоугольника");
-            heigth = scanner.nextInt();
-            if (width <= 0 || heigth <= 0 || width != heigth)
+            height = scanner.nextFloat();
+            if (width <= 0 || height <= 0 || width == height)
                 System.out.println("Стороны прямоугольника не должны быть равны 0");
         }
-        while (width <= 0 || heigth <= 0 || width != heigth);
+        while (width <= 0 || height <= 0 || width == height);
 
 
     }
 
 
-    protected int perimetr(int heigth, int width) {
+    protected double getPerimeter(float height, float width) {
 
-        perimetr = 2 * (heigth + width);
-
-        System.out.println("Периметр равен " + perimetr);//TODO: вынести из метода
-        return perimetr;
+        perimeter = 2 * (height + width);
+        return perimeter;
     }
 
-    protected int getArea(int heigth, int width) {
+    protected double getArea(float height, float width) {
+        sq = height * width;
 
-        int sq = heigth * width;
 
-        System.out.println("Площадь равна " + sq);//TODO: вынести из метода
         return sq;
     }
 
-    protected void drowing(int heigth, int width) {
-        //TODO: не стоит именовать так переменные!
-        int _heigth = heigth;
-        int _width = width;
-        for (int i = 0; i < _width; i++) {
-            for (int j = 0; j < _heigth; j++) {
-                System.out.print('*');
-            }
+    public void outPut() {
 
-            System.out.println(' ');
-        }
+        System.out.println("Периметр равен: " + perimeter + "\n Площадь равна:" + sq);
+
     }
 
 }

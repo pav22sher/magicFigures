@@ -1,13 +1,20 @@
 package company;
 
+import java.io.*;
 import java.util.Scanner;
-import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+
 
 public class Main {
-    public static void main(String[] args) {
 
-        //удачи
+    public static void main(String[] args) throws IOException {
+        Scanner scanner2 = new Scanner(System.in);
+        User user1 = new User();
+        User user2 = new User();
+
+
+
+
     }
+
+
 }

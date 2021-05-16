@@ -9,43 +9,42 @@ public class Square extends Figure {
     Scanner scanner = new Scanner(System.in);
 
 
-    protected void parametrs() {
+    protected void parameters() {
         System.out.println(getName("Квадрат"));
 
         do {
-            System.out.println("Введите ширину квадрата");
-            width = scanner.nextInt();
-            System.out.println("Введите высоту квадрата");
-            heigth = scanner.nextInt();
-            if (width <= 0 || heigth <= 0 || width != heigth)
+            System.out.println("Введите размер сторон квадрата");
+            width = scanner.nextFloat();
+
+            if (width <= 0)
                 System.out.println("Стороны прямоугольника не должны быть равны 0");
         }
-        while (width <= 0 || heigth <= 0 || width != heigth);
+        while (width <= 0 );
 
     }
 
 
-    protected int perimetr(int heigth, int width) {
+    protected void getPerimeter(float width) {
 
-        perimetr = 2 * (heigth + width);
+        perimeter = 2 * (width + width);
 
-        System.out.println("Периметр равен " + perimetr);
-        return perimetr;
     }
 
-    protected int getArea(int heigth, int width) {
+    protected void getArea(float width) {
 
-        int sq = heigth * width;
+       sq = width * width;
 
-        System.out.println("Площадь равна " + sq);
-        return sq;
     }
 
-    protected void drowing(int heigth, int width) {
-        int _heigth = heigth;
-        int _width = width;
-        for (int i = 0; i < _width; i++) {
-            for (int j = 0; j < _heigth; j++) {
+    public void outPut() {
+
+        System.out.println("Периметр равен: " + perimeter + "\n Площадь равна:" + sq);
+    }
+
+    protected void drowing(float width) {
+
+        for (float i = 0; i < width; i++) {
+            for (float j = 0; j < width; j++) {
                 System.out.print('*');
             }
 

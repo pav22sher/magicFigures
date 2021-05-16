@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Circle extends Figure {
 
-    private double perimetr;//TODO:вынести вобщий класс Figure
+    private double perimeter;//TODO:вынести вобщий класс Figure
     Scanner scanner = new Scanner(System.in);//TODO: не делать scanner полем класса
 
-    protected void parametrs() { //parameters
+    protected void parameters(Scanner scanner) {
         System.out.println(getName("Круг"));
         do {
             System.out.println("Введите радиус круга");
-            radius = scanner.nextInt();
+            radius = this.scanner.nextInt();
             if (radius <= 0)
                 System.out.println("Радиус круга должны быть больше 0");//TODO: попробуй использывать exception
         }
@@ -20,11 +20,11 @@ public class Circle extends Figure {
     }
 
 
-    protected double perimetr(int radius) {//TODO: сделать метод public и переопределить
+    protected double getPerimeter(int radius) {//TODO: сделать метод public и переопределить
 
-        perimetr = 2 * Math.PI * radius;
-        System.out.println("Периметр равен " + perimetr);
-        return perimetr;
+        perimeter = 2 * Math.PI * radius;
+        System.out.println("Периметр равен " + perimeter);
+        return perimeter;
     }
 
     protected double getArea(int radius) {//TODO: сделать метод public и переопределить
@@ -34,8 +34,9 @@ public class Circle extends Figure {
         return sq;
     }
 
-    protected void drowing(int radius) {
+    public void outPut() {
 
+        System.out.println("Периметр равен: " + perimeter + "\n Площадь равна:" + sq);
     }
 }
 
