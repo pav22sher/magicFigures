@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c30505a4-64ea-4600-97b7-f514864b5071" name="Default Changelist" comment="очистил">
-      <change afterPath="$PROJECT_DIR$/src/company/model/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/model/Figure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="c30505a4-64ea-4600-97b7-f514864b5071" name="Default Changelist" comment="все основные методы я засунул в класс User&#10;созданы классы ReadObject и WriteObject для чтения файлов&#10;теперь мне надо создать коллекцию для каждого нового созданого объекта">
+      <change afterPath="$PROJECT_DIR$/src/company/View/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/View/Registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Audit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Figure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/ReadObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/repository/ReadObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/WriteObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/repository/WriteObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/model/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task9.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interfaces.Test" />
+    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task.Task2" />
       <module name="JavaMagicFigures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Interfaces.*" />
+          <option name="PATTERN" value="task.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="company.Test" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interfaces.Test" />
       <module name="JavaMagicFigures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="company.model.*" />
+          <option name="PATTERN" value="Interfaces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,10 +140,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Task2" />
         <item itemvalue="Application.ReadObject" />
         <item itemvalue="Application.WriteObject" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>

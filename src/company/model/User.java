@@ -4,13 +4,14 @@ import java.io.Serializable;
 
 public class User implements Serializable {
     static int count = 1;
-    public String userName;
     private final int id;
+    public String userName;
+    protected String password;
 
-    public User(String userName)
-    {
+    public User(String userName, String password) {
         this.id = count++;
         this.userName = userName;
+        this.password = password;
     }
 
     @Override

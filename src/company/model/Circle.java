@@ -26,5 +26,7 @@ public class Circle extends Figure {
         sq = (float) (Math.PI * (radius * radius));
         return sq;
     }
+
+
 }
 

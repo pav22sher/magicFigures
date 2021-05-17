@@ -28,4 +28,11 @@ public class Figure {
         builder.append("Время создания:").append(createdAtFormat);
         return builder.toString();
     }
+
+    public void getResult() {
+        System.out.println("Периметр равен: " + perimeter);
+        System.out.println("Периметр равен: " + sq);
+    }
+
+
 }
