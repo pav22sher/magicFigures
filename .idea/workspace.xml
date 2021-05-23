@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c30505a4-64ea-4600-97b7-f514864b5071" name="Default Changelist" comment="Накидал немножко меню">
-      <change afterPath="$PROJECT_DIR$/src/company/repository/ReadObjectCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/repository/WriteObjectCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Users.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/View/MainView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/View/SecurityView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/service/MainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/View/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/View/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/View/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/View/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/repository/WriteObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/repository/WriteObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/View/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/View/Registration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/repository/ReadObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/repository/WriteObject.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
