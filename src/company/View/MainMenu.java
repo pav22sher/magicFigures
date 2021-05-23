@@ -5,23 +5,23 @@ import company.model.*;
 
 public class MainMenu {
     public int choiceMenu;
-    protected String userName;
-    protected String password;
 
-    public void MainMenu() {
+
+    public void mainMenuStart() {
         Scanner scanner = new Scanner(System.in);
         Registration reg = new Registration();
-        introductionWords(scanner);
+        System.out.println("Добро пожаловать пользователь! \n Выберите, что вы хотите сделать.");
+        System.out.println("\n1. Зарегистрироваться" + "\n2. Войти");   choiceMenu = scanner.nextInt();
+
         switch (choiceMenu) {
             case 1:
-                getLogin(scanner);
-                getPassword(userName, scanner);
-                reg.saveLogin(userName, password);
+                User user = getUser(scanner);
+                Registration.checkUserForRegistration(user);
+                Registration.saveUser(user);
                 break;
             case 2:
-                getLogin(scanner);
-                getPassword(userName, scanner);
-                reg.checkLogin(userName, scanner);
+                User user1 = getUser(scanner);
+                Registration.checkUserForEnter(user1);
                 break;
             default:
                 System.out.println("Некорректный ввод, попробуйте еще раз");
@@ -30,24 +30,28 @@ public class MainMenu {
 
     }
 
-    private void introductionWords(Scanner scanner) {
-        System.out.println("Добро пожаловать пользователь! \n Выберите, что вы хотите сделать.");
-        System.out.println("1. Зарегистрироваться");
-        System.out.println("2. Войти");
-        choiceMenu = scanner.nextInt();
+    private User getUser(Scanner scanner) {
+        String userName;
+        String password;
+        userName = scanner.nextLine();
+        getLogin(scanner);
+
+        getPassword(scanner);
+        password = scanner.nextLine();
+
+        return new User(userName, password);
     }
+
 
     protected String getLogin(Scanner scanner) {
         System.out.println("\t Заполните поля");
         System.out.println("Логин:");
-        userName = scanner.nextLine();
-        return userName;                    // почему то возвращает нулл и не видит имя.... чет не понял почему
+        return scanner.nextLine();
+
     }
-    protected String getPassword(String userName, Scanner scanner){
-        this.userName = userName;
+    protected String getPassword(Scanner scanner){
         System.out.println("Пароль:");
-        password = scanner.nextLine();
-        return password;
+        return scanner.nextLine();
     }
 
 }

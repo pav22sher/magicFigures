@@ -1,6 +1,7 @@
 package company.service;
 
 import company.View.MainMenu;
+import company.View.Registration;
 import company.model.*;
 import company.repository.ReadObject;
 import company.repository.WriteObject;
@@ -10,11 +11,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
+
+
         MainMenu mm = new MainMenu();
-        mm.MainMenu();
+        mm.mainMenuStart();
         start();
     }
-
+// как управлять потоками и запускать файлы через цикл while я не понял...(
+    //метод старт надо как то связать с юзером, в таком случае его наверное нужно перенести в метод старт
     public static void start() {
         Scanner scanner = new Scanner(System.in);
         int caseSwitch;

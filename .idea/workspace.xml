@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c30505a4-64ea-4600-97b7-f514864b5071" name="Default Changelist" comment="все основные методы я засунул в класс User&#10;созданы классы ReadObject и WriteObject для чтения файлов&#10;теперь мне надо создать коллекцию для каждого нового созданого объекта">
-      <change afterPath="$PROJECT_DIR$/src/company/View/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/View/Registration.java" afterDir="false" />
+    <list default="true" id="c30505a4-64ea-4600-97b7-f514864b5071" name="Default Changelist" comment="Накидал немножко меню">
+      <change afterPath="$PROJECT_DIR$/src/company/repository/ReadObjectCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company/repository/WriteObjectCircle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/model/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/View/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/View/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/View/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/View/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/repository/WriteObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/repository/WriteObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task9.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +58,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="company" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="company.repository" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -177,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620297807097</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Накидал немножко меню">
+      <created>1621275849401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621275849401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +207,8 @@
     <MESSAGE value="я запрограммировал квадрат, можно посчитать периметр и площадь" />
     <MESSAGE value="Вот дописал небольшой интерфейс по простому.&#10;Не понял как дату вызывать пока что.&#10;и как настроить следующие команды CRUD-создание(create), чтение(read), модификация(update), удаление(delete)" />
     <MESSAGE value="очистил" />
-    <option name="LAST_COMMIT_MESSAGE" value="очистил" />
+    <MESSAGE value="Накидал немножко меню" />
+    <option name="LAST_COMMIT_MESSAGE" value="Накидал немножко меню" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
